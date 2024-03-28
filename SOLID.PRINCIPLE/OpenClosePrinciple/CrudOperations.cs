@@ -9,11 +9,15 @@ namespace SOLID.PRINCIPLE.OpenClosePrinciple
     //Generic class
     internal abstract class CrudOperations<TEntity> where TEntity : Entity, new()
     {
+        //abstract methods 
+        //method without body
         public abstract void Save(TEntity entity);
         public abstract void Update(TEntity entity);
         public abstract void GetAll();
        public abstract void GetById(int id);
         public abstract void Delete(TEntity entity);
+        //concrete method
+        //method with body
         public void SaveOrUpdate(TEntity entity)
         {
             using (var context = new DatabaseContext())
