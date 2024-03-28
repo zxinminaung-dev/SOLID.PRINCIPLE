@@ -23,13 +23,28 @@ namespace SOLID.PRINCIPLE.SingleResponsibility.Voice
             }
             return voiceList;
         }
+        [Obsolete("This method is obsolete use another method")]
         public void Speak(string text, string speakerName)
         {
-            // Create a SpeechSynthesizer instance
+            // Create a SpeechSynthesizer instance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
             SpeechSynthesizer synthesizer = new SpeechSynthesizer();            
             Console.WriteLine("ready ...........");
             synthesizer.SelectVoice(speakerName);
             synthesizer.Speak(text);
+            Console.WriteLine("Finish");
+            synthesizer.Dispose();
+        }
+       
+        public void Speak(string text, string speakerName,bool isSpeak)
+        {
+            // Create a SpeechSynthesizer instance
+            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+            Console.WriteLine("ready ...........");
+            synthesizer.SelectVoice(speakerName);
+            if (isSpeak)
+            {
+                synthesizer.Speak(text);
+            }           
             Console.WriteLine("Finish");
             synthesizer.Dispose();
         }

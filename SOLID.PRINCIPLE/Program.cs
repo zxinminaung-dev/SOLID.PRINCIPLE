@@ -41,7 +41,7 @@ namespace SOLID.PRINCIPLE
             Console.WriteLine("Enter Text You Want to speak");
             string SpeakText = Console.ReadLine();
 
-            voiceFunction.Speak(SpeakText,voiceName);
+            voiceFunction.Speak(SpeakText,voiceName,true);
         }
     }
 }
