@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SOLID.PRINCIPLE.SingleResponsibility.Teacher
 {
-    internal class TeacherEntity : Entity
+    public class TeacherEntity : Entity
     {
         public string name { get; set; }
     }

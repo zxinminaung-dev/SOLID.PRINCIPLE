@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SOLID.PRINCIPLE.Database
 {
-    internal class DatabaseContext : DbContext
+    public class DatabaseContext : DbContext
     {
         public DatabaseContext()
         {

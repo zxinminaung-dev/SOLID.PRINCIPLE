@@ -6,7 +6,7 @@ using System.Text;
 namespace SOLID.PRINCIPLE.SingleResponsibility.Student
 {
     //a class must have only one reason to change
-    internal class StudentEntity : Entity
+    public class StudentEntity : Entity
     {
         public string name { get; set; }
         //liskov substitution principle

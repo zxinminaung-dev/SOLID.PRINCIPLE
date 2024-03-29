@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOLID.PRINCIPLE.BaseEntity
 {
-    internal class Entity
+    public class Entity
     {
         public int id { get; set; }
         public virtual int getId()
