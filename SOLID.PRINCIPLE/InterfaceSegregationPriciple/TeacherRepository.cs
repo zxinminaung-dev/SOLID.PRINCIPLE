@@ -11,9 +11,9 @@ namespace SOLID.PRINCIPLE.InterfaceSegregationPriciple
     {
         private DatabaseContext _dbContext;
         //constructor injection
-        //inject the database context
         public TeacherRepository(DatabaseContext databaseContext) 
-        { 
+        {
+            //inject the database context
             _dbContext = databaseContext;
         }
         public TeacherRepository()

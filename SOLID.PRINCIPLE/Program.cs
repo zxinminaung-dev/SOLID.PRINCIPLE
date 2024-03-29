@@ -48,7 +48,6 @@ namespace SOLID.PRINCIPLE
             ITeacherInterface<TeacherEntity> _teacherInterface = teacherRepo; 
 
 
-
             TeacherEntity teacherEntity = new TeacherEntity();
             Console.WriteLine("Enter teacher name");
             string tempName = Console.ReadLine();
